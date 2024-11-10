@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Média</title>
+    <style>
+
+        
+        #media {font-weight: bold }
+        #condicao {font-weight: bold;}
+        .aprovado {
+            color: rgb(5, 5, 204);
+        }
+        .reprovado {color: rgb(253, 0, 0);}
+
+        button {background-color: rgb(159, 225, 241); border-radius: 5px; /* Bordas arredondadas */}
+
+        h1 {background-color: rgb(235, 230, 214);}
+
+        #imc {font-weight: bold;}
+        #situacao {font-weight: bold;}
+        .normal {
+            color: green;
+        }
+        .alerta {
+            color: orange;
+        }
+        .perigo {
+            color: red;
+        }
+
+
+    </style>
+</head>
+</html>

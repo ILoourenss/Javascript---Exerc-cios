@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <h1>Cálculo da Média</h1>
+    <br>
+    <p> A sua média é: <span id="media">0</span></p>
+    <p> Condição: <span id="condicao"> NÃO SE APICA</span></p>
+
+    <script>
+        const nota1 = parseFloat(prompt("Digite a primeira nota:"));
+        const nota2 = parseFloat (prompt("Digite a segunda nota:"));
+
+        const media = (nota1 + nota2) / 2;
+
+        document.getElementById("media").innerHTML = media.toFixed(2)
+        const condicaoSpan = document.getElementById("condicao");
+        if (media >= 6) {
+            condicaoSpan.innerHTML = "APROVADO";
+            condicaoSpan.className = "aprovado";
+        } else {
+            condicaoSpan.innerHTML = "REPROVADO";
+            condicaoSpan.className = "reprovado";
+        }
+    </script>
+
+    <a href="file:///C:/Users/igorl/OneDrive/%C3%81rea%20de%20Trabalho/Atividade01/Index.html"> <button><b> VOLTAR</b></button></a>
+
+</body>
+</html>

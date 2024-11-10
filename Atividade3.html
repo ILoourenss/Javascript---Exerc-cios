@@ -1,0 +1,59 @@
+<html>
+
+<head>
+       <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+<h1>The Element Object</h1>
+<h2>The appendChild() Method</h2>
+
+<ul id="myList">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ul>
+
+<p>Click "Append" to append an item to the end of the list:</p>
+
+<button onclick="myFunction()">Append</button>
+
+<form>
+    <input type="text" id="nova_palavra">
+    <br>
+    <input type="radio" id="laranja" name="cores" 
+           value="orange">
+    <label for="id_laranja">Laranja</label>
+    
+    <input type="radio" id="verm" name="cores" 
+           value="red" checked>
+    <label for="id_verm">Vermelho</label>
+
+    <input type="radio" id="verde" name="cores" 
+           value="green">
+    <label for="id_verde">Verde</label>
+</form>
+
+<script>
+function myFunction() {
+    let nova_palavra = document.getElementById("nova_palavra").value;
+    let cor = document.querySelector('input[name="cores"]:checked').value;
+
+// Create an "li" node:
+const node = document.createElement("li"); 
+
+// Create a text node:
+const textnode = document.createTextNode(nova_palavra);
+
+// Append the text node to the "li" node:
+node.appendChild(textnode);
+node.style.color = cor;
+
+// Append the "li" node to the list:
+document.getElementById("myList").appendChild(node);
+}
+</script>
+
+<a href="file:///C:/Users/igorl/OneDrive/%C3%81rea%20de%20Trabalho/Atividade01/Index.html"> <button><b> VOLTAR</b></button></a>
+
+</body>
+</html>
